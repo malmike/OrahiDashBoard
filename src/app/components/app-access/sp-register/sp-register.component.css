@@ -1,0 +1,47 @@
+#sp-container{
+    padding-top: 1.5em;
+}
+
+md-card{
+    margin: auto; 
+    padding: 3em 3em 2.5em 3em; 
+    width: max-content; 
+    text-align: center;
+}
+
+md-card-title{
+    padding: 0.5em 1.5em 0 1.5em;
+}
+
+md-card-content{
+    padding: 0.1em 1.5em 0 1.5em;
+}
+
+md-input-container{
+    width: 100%;
+}
+
+#submit-container{
+    padding-top: 1.5em;
+}
+
+button{
+    width: 100%; 
+    background-color: black; 
+    color: whitesmoke;
+}
+
+md-card-footer{
+    padding-top: 1.5em; 
+    padding-bottom: 1.5em;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
