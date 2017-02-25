@@ -1,19 +1,22 @@
-<div id="sp-container">
+<div layout="row" layout-align="center center" id="sp-container">
     <md-card>
       <md-card-header>
         <img md-card-image src="assets/images/orahi_logo.png" style="margin:auto; width: 3em;height: 3em; background-color: orangered ">
       </md-card-header>
       <md-card-title>Service Provider Login</md-card-title>
       <md-card-content>
-        <md-input-container>
-          <input mdInput placeholder="Email" type="email">
-        </md-input-container><br/>
-        <md-input-container>
-          <input mdInput placeholder="Password" type="password">
-        </md-input-container>
-        <div id="submit-container">
-          <button md-raised-button>LOGIN</button>
-        </div>
+        <form [formGroup]="loginForm" *ngIf="active" (ngSubmit)="onSubmitForm()">
+          <md-input-container>
+            <input mdInput placeholder="Email" type="email" formControlName="email" id="email" required>
+            <md-hint align="end" *ngIf="formErrors.email">{{ formErrors.email }}</md-hint>
+          </md-input-container><br/>
+          <md-input-container>
+            <input mdInput placeholder="Password" type="password" formControlName="password" id="password" required>
+          </md-input-container>
+          <div id="submit-container">
+            <button md-raised-button type="submit" [disabled]="!loginForm.valid">LOGIN</button>
+          </div>
+        </form>
       </md-card-content>
       <md-card-footer>
         <a (click)=navRegister()>Have no account, Register here</a>

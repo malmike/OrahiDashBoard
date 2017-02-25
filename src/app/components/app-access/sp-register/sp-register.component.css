@@ -1,3 +1,21 @@
+.ng-valid[required], .ng-valid.required, md-input-container{
+  color: black;
+}
+
+.ng-invalid:not(md-input-container){
+  color: red;
+}
+
+md-select .placeholder{
+  text-align: right;
+}
+
+md-select{
+  margin-bottom: 0.6em;
+  width:100%;
+  text-align: left;
+}
+
 #sp-container{
     padding-top: 1.5em;
 }
@@ -44,4 +62,8 @@ a{
 a:hover{
     color: blueviolet;
     text-decoration: underline;
+}
+
+md-hint{
+  color: red;
 }
