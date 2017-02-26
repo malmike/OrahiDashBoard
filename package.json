@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
-
   "scripts": {
     "ng": "ng",
     "start": "http-server",
@@ -13,6 +12,13 @@
     "e2e": "protractor",
     "preinstall": "npm install -g http-server",
     "postinstall": "ng build && mv dist/* ."
+  },
+  "scripts-dev": {
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -48,7 +54,6 @@
     "tslint": "~4.4.2",
     "typescript": "~2.0.0"
   },
-  "devDependencies": {
-    
+  "devDependencies": {  
   }
 }
