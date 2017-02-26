@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MdSnackBar } from '@angular/material';
 
 //Services
 import { RegExpService } from '../../../services/shared-information/reg-exp.service';
@@ -31,7 +32,8 @@ export class SPLoginComponent implements OnInit{
         private router: Router,
         private regExpService: RegExpService,
         private webApiPathService: WebApiPathService,
-        private loginSpService: LoginSpService){}
+        private loginSpService: LoginSpService,
+        private snackBar: MdSnackBar){}
 
     ngOnInit(){
         this.buildForm();
@@ -92,12 +94,21 @@ export class SPLoginComponent implements OnInit{
             .subscribe(responseSp => {
                 if (responseSp.status === "success") { 
                     console.log(responseSp.message);
+                    this.snackBar.open(responseSp.message, '', {
+                        duration: 2000,
+                    });
                     this.router.navigate(['/spregister']);
                 }else{
+                    this.snackBar.open(responseSp.message, '', {
+                        duration: 2000,
+                    });
                     console.log(responseSp.message);
                 }
             }, 
             errMsg => {
+                this.snackBar.open(errMsg, '', {
+                        duration: 2000,
+                });
                 console.log(errMsg);
             });
     }

@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MdSnackBar } from '@angular/material';
+
 
 //Services
 import { AppCategoryService } from '../../../services/shared-information/app-categories.service';
@@ -36,7 +38,8 @@ export class SPRegisterComponent implements OnInit{
         private appCategoryService: AppCategoryService,
         private regExpService: RegExpService,
         private webApiPathService: WebApiPathService,
-        private registerSpService: RegisterSpService
+        private registerSpService: RegisterSpService,
+        private snackBar: MdSnackBar
     ){}
 
     ngOnInit(){
@@ -167,12 +170,21 @@ export class SPRegisterComponent implements OnInit{
             .subscribe(responseSp => {
                 if (responseSp.status === "success") { 
                     console.log(responseSp.message);
+                    this.snackBar.open(responseSp.message, '', {
+                        duration: 2000,
+                    });
                     this.router.navigate(['/splogin']);
                 }else{
+                    this.snackBar.open(responseSp.message, '', {
+                        duration: 2000,
+                    });
                     console.log(responseSp.message);
                 }
             }, 
             errMsg => {
+                this.snackBar.open(errMsg, '', {
+                        duration: 2000,
+                });
                 console.log(errMsg);
             });
     }
