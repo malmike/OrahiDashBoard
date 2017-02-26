@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"*/
-
+    "ng": "ng",
     "start": "http-server",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
