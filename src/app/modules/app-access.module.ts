@@ -20,6 +20,9 @@ import { WebApiPathService } from '../services/shared-information/webapi-path.se
 import { RegisterSpService } from '../services/httpCalls/register-sp.service';
 import { LoginSpService } from '../services/httpCalls/login-sp.service';
 
+//Directives
+import { StructureValidatorDirective } from '../form-validators/structure.validator';
+
 @NgModule({
     imports: [ 
         CommonModule, 
@@ -30,7 +33,8 @@ import { LoginSpService } from '../services/httpCalls/login-sp.service';
     ],  
     declarations: [ 
         SPLoginComponent,
-        SPRegisterComponent
+        SPRegisterComponent,
+        StructureValidatorDirective
     ],
     providers: [
         AppCategoryService,

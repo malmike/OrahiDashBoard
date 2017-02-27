@@ -21,18 +21,27 @@ export function StructureValidator(structureRe: Array<RegExp>): ValidatorFn{
     providers: [{provide: NG_VALIDATORS, useExisting: StructureValidatorDirective, multi: true}]
 })
 export class StructureValidatorDirective implements Validator, OnChanges {
-    @Input() forbiddenStructure: string;
+    @Input() forbiddenStructure: Array<string>;
     private valFn = Validators.nullValidator;
+
     ngOnChanges(changes: SimpleChanges): void{
-        const change = changes['forbiddenStructure'];
+        let values: Array<RegExp> = new Array<RegExp>();
+        const change: Array<string> = changes['forbiddenStructure'].currentValue;
         if(change){
-            const val: string | RegExp = change.currentValue;
-            const re = val instanceof RegExp ? val: new RegExp(val, 'i');
-            this.valFn = StructureValidator([re]);
+            change.forEach(value => {
+                const val: any= value;
+                const re: RegExp = val instanceof RegExp ? val : new RegExp(val, 'i');
+                values.push(re);
+            })
+
+            if(values.length > 0){
+                this.valFn = StructureValidator(values);
+            }
         }else{
-            this.valFn = Validators.nullValidator;
+                    this.valFn = Validators.nullValidator;
         }
     }
+    
     validate(control: AbstractControl): {[key: string]: any} {
         return this.valFn(control);
     }
