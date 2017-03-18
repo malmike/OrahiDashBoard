@@ -13,11 +13,13 @@ export class LoginSpService {
     authUrl:string = GlobalVariables.getInstance().getWebApi();
     private serviceProvider: ServiceProviderModel = new ServiceProviderModel();
     private token: string;
+    private password: string;
 
     constructor(private http: Http) {}
 
     authenticate(serviceProvider: ServiceProviderModel, path: string): Observable<ResponseSpModel>{
         let headers = new Headers();
+        this.password = serviceProvider.password;
         headers.append('Content-Type', 'application/json');
         headers.append('Accept', 'application/json');
         let requestoptions = new RequestOptions({
@@ -32,7 +34,8 @@ export class LoginSpService {
             .map((res: Response) => {          
                 let responseSp: ResponseSpModel = res.json();
                 if(responseSp.status === 'success'){
-                    this.serviceProvider = responseSp.serviceProvider;
+                    this.serviceProvider = responseSp.serviceprovider;
+                    this.serviceProvider.password = this.password;
                     this.token = responseSp.token;
                     localStorage.setItem('currentUser', JSON.stringify({ serviceProvider: this.serviceProvider, token: this.token }));
                     return responseSp;
@@ -59,6 +62,10 @@ export class LoginSpService {
 
     getServiceProvider():ServiceProviderModel{
         return this.serviceProvider;
+    }
+
+    getToken():string{
+        return this.token;
     }
 
     logout(): void {
