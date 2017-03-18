@@ -17,3 +17,10 @@ label{
 .example-sidenav-content{
     height: 100vh;
 }
+
+.header-toolbar {
+    position: fixed;
+    z-index: 2;
+    margin: 0;
+}
+
