@@ -5,7 +5,7 @@
     
 export class GlobalVariables {
     private static instance: GlobalVariables;
-    private webApi:string = "https://orahiapi.herokuapp.com/";
+    private webApi:string = "https://orahirestapi.herokuapp.com/";
     private constructor() {}
     static getInstance() {
         if (!GlobalVariables.instance) {
