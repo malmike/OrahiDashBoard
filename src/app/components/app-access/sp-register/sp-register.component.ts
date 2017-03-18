@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MdSnackBar } from '@angular/material';
+import { MouseEvent } from "angular2-google-maps/core";
 
 
 //Services
@@ -13,6 +14,7 @@ import { RegisterSpService } from '../../../services/httpCalls/register-sp.servi
 
 //Models
 import { ServiceProviderModel } from '../../../models/service-provider.model';
+import { LocationModel } from '../../../models/location.model';
 
 //Form Validators
 import { CompareItemsValidator } from '../../../form-validators/compare-items.validator';
@@ -31,6 +33,21 @@ export class SPRegisterComponent implements OnInit{
     registrationForm: FormGroup;
     active:boolean = true;
     provePassword: string;
+    location: LocationModel;
+
+    lat: number = 1.277328;
+    lng: number = 32.389984;
+
+    custom_lat: number = 0;
+    custom_lng: number = 0;
+    
+    setPosition(position){
+        console.log(position);
+        this.lat = position.coords.latitude;
+        this.lng = position.coords.longitude;
+
+        console.log(this.lat+"-"+this.lng);
+    }
 
     constructor(
         private fb: FormBuilder,
@@ -43,8 +60,23 @@ export class SPRegisterComponent implements OnInit{
     ){}
 
     ngOnInit(){
+        this.getCurrentLocation();
         this.getCategories();
         this.buildForm();
+    }
+
+    mapClicked($event: MouseEvent) {
+        this.custom_lat = $event.coords.lat;
+        this.custom_lng = $event.coords.lng;
+        console.log(this.custom_lat+"-"+this.custom_lng);
+    }
+
+    getCurrentLocation(){
+        if(!!navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(this.setPosition.bind(this));
+        } else {
+            console.log('Geo Location not supported by this browser');
+        }
     }
 
     getCategories(){
@@ -163,8 +195,15 @@ export class SPRegisterComponent implements OnInit{
         }
     }
 
-    onSubmitForm(){
+    onSubmitForm(){        
         this.serviceProvider = this.registrationForm.value;
+        if((this.custom_lat !== 0 && this.custom_lng !== 0)){
+            let location = new LocationModel(
+                this.custom_lat, this.custom_lng
+            );
+            this.serviceProvider.location = location;
+        }
+        
         console.log(this.serviceProvider);
         this.registerSpService.register(this.serviceProvider, this.webApiPathService.getWebApiPath('register-sp').path)
             .subscribe(responseSp => {

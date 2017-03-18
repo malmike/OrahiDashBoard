@@ -34,6 +34,12 @@
             <input mdInput placeholder="Re-Enter Password" type="password" formControlName="confirmPassword" id="confirmPassword" required>
             <md-hint align="end" *ngIf="provePassword">{{ provePassword }}</md-hint>
           </md-input-container>
+
+          <sebm-google-map [latitude]="lat" [longitude]="lng" (mapClick)="mapClicked($event)">
+            <sebm-google-map-marker *ngIf="custom_lat && custom_lng" [latitude]="custom_lat" [longitude]="custom_lng"></sebm-google-map-marker>
+            <!--<sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>-->
+          </sebm-google-map>
+
           <div id="submit-container">
             <button md-raised-button type="submit" [disabled]="!registrationForm.valid">REGISTER</button>
           </div>

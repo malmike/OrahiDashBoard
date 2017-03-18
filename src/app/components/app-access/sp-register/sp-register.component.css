@@ -67,3 +67,7 @@ a:hover{
 md-hint{
   color: red;
 }
+
+.sebm-google-map-container {
+  height: 300px;
+}
