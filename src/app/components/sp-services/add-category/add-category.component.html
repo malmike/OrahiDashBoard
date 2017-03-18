@@ -1,0 +1,22 @@
+<div layout="row" layout-align="center center" id="sp-container">
+    <md-card>
+      <md-card-header>
+        <img md-card-image src="assets/images/orahi_logo.png" style="margin:auto; width: 3em;height: 3em; background-color: orangered ">
+      </md-card-header>
+      <md-card-title>Add Service Category</md-card-title>
+      <md-card-content>
+        <form [formGroup]="addServiceCategoryForm" *ngIf="active" (ngSubmit)="onSubmitForm()">
+          <md-input-container>
+            <input mdInput placeholder="Category Name" type="text" formControlName="name" id="name">
+            <md-hint align="end" *ngIf="formErrors.name">{{ formErrors.name }}</md-hint>
+          </md-input-container><br/>
+          <md-input-container>
+            <textarea mdInput placeholder="Service Description" formControlName="description" columns="1" md-maxlength="100%" rows="5"></textarea>
+          </md-input-container><br/>
+          <div id="submit-container">
+            <button md-raised-button type="submit" [disabled]="!addServiceCategoryForm.valid">Add Service Category</button>
+          </div>
+        </form>
+      </md-card-content>
+    </md-card>
+</div>
