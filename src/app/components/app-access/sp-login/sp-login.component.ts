@@ -66,7 +66,7 @@ export class SPLoginComponent implements OnInit{
         for(const field in this.formErrors){
             //Clear previous error messages (if any)
             this.formErrors[field] = '';
-            const control = form.get(field);
+            const control = form.get(field);          
             if(control && control.dirty && !control.valid){
                 const messages = this.validationMessages[field];
                 for(const key in control.errors){
@@ -97,7 +97,7 @@ export class SPLoginComponent implements OnInit{
                     this.snackBar.open(responseSp.message, '', {
                         duration: 2000,
                     });
-                    this.router.navigate(['/spregister']);
+                    this.router.navigate(['/nav', 'dashboard']);
                 }else{
                     this.snackBar.open(responseSp.message, '', {
                         duration: 2000,
