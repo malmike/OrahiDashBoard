@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule  } from '@angular/forms';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 import 'hammerjs';
 
 //Components
@@ -29,6 +30,9 @@ import { StructureValidatorDirective } from '../form-validators/structure.valida
         HttpModule,
         ReactiveFormsModule ,
         MaterialModule.forRoot(), 
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyCWWwrRN2N09Qt5TtJQTQi-4i0bi10LMSE'
+        }),
         AppAccessRoutingModule
     ],  
     declarations: [ 
