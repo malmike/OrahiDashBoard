@@ -5,6 +5,6 @@ export class ResponseSpModel{
         public status: string,
         public message: string, 
         public token?: string,
-        public serviceProvider?: ServiceProviderModel
+        public serviceprovider?: ServiceProviderModel
     ){}
 }
