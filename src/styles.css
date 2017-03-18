@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+
+/*This is for the ng2-img-cropper api. It is applied on the add-service component page*/
+.ng2-imgcrop canvas{
+    display: block!important;
+}
