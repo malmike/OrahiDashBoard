@@ -10,7 +10,7 @@
 
 body{
     margin: 0;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 /*::-webkit-scrollbar {
     display: none;
