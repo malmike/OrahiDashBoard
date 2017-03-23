@@ -94,7 +94,7 @@ export class SPRegisterComponent implements OnInit{
             ],
             'name': [null, [
                 Validators.required,
-                Validators.minLength(4)
+                Validators.minLength(3)
             ]],
             'email':[null,[
                 Validators.required,
@@ -172,7 +172,7 @@ export class SPRegisterComponent implements OnInit{
         },
         'name': {
             'required': 'Name is required.',
-            'minlength': 'Name must be at least 4 characters long.'
+            'minlength': 'Name must be at least 3 characters long.'
         },
         'email': {
             'required': 'Email is required.',
