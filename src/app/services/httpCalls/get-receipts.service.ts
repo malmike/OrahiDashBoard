@@ -7,14 +7,14 @@ import { GlobalVariables } from '../../global-variables/global-variables';
 import { SpReceiptModel } from '../../models/sp-receipt.model';
 
 @Injectable()
-export class GetServiceCategoryService {
+export class GetReceiptsService {
 
     authUrl:string = GlobalVariables.getInstance().getWebApi();
     spReceiptList: Array<SpReceiptModel> = new Array<SpReceiptModel>();
 
     constructor(private http: Http) {}
 
-    getServiceCategory(path: string, token: string): Observable<Boolean>{
+    getReceipts(path: string, token: string): Observable<Boolean>{
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         headers.append('x-access-token', token);
@@ -25,7 +25,7 @@ export class GetServiceCategoryService {
 
 
         let urlPath: string = this.authUrl + path;
-
+        console.log(urlPath);
         return this.http
             .get(urlPath, requestoptions)
             .map((res: Response) => {  
@@ -53,7 +53,7 @@ export class GetServiceCategoryService {
         return Observable.throw(errMsg);
     }
 
-    public getServiceCategoryList(): Array<SpReceiptModel>{
+    public getReceiptsList(): Array<SpReceiptModel>{
         return this.spReceiptList;
     }
 
