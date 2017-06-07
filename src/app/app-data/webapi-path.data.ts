@@ -5,5 +5,6 @@ export const WebApiPathList:Array<WebApiPathModel> = [
     {name: 'login-sp', path: 'api/serviceProvider/authenticate'},
     {name: 'add-service', path: 'api/serviceProvider/postService'},
     {name: 'add-service-category', path: 'api/serviceProvider/addCategory'},
-    {name: 'get-service-category', path: 'api/serviceProvider/getCategories'}
+    {name: 'get-service-category', path: 'api/serviceProvider/getCategories'},
+    {name: 'get-sp-receipts', path: 'api/serviceprovider/getSPReceipts'}
 ]
