@@ -23,4 +23,17 @@ label{
     z-index: 2;
     margin: 0;
 }
+.md-list-avatar{
+    height:15px;
+    width:15px;
+}
+
+md-list-item a{
+    color:black;
+    text-decoration: none;
+}
+md-list-item a:hover{
+    color: blue
+
+}
 

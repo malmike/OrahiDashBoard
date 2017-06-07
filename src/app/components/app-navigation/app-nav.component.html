@@ -26,9 +26,9 @@
 
 <md-sidenav-container>
   <md-sidenav #sidenav mode="side" opened="true">
-    <md-list>
-      <h3 md-subheader>Menu</h3>
+    <md-list dense>
       <md-list-item *ngFor="let link of navLinks">
+        <img md-list-avatar class="md-list-avatar" src="{{link.image}}">
         <a md-line [routerLink]="link.link">{{link.label}}</a>
         <md-divider></md-divider>
       </md-list-item>
