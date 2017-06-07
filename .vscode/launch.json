@@ -5,7 +5,7 @@
             "name": "Launch Chrome against localhost, with sourcemaps",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:4200/",
+            "url": "http://localhost:8080/",
             "runtimeArgs": [
                 "--user-data-dir",
                 "--remote-debugging-port=9222"
@@ -19,7 +19,7 @@
             "name": "Attach to Chrome, with sourcemaps",
             "type": "chrome",
             "request": "attach",
-            "url": "http://localhost:4200/splogin",
+            "url": "http://localhost:8080/splogin",
             "port": 9222,
             "sourceMaps": true,
             "diagnosticLogging": true,
