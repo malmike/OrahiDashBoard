@@ -15,7 +15,7 @@ import { StructureValidator } from '../../../form-validators/structure.validator
 //Models
 import { ServiceProviderModel } from '../../../models/service-provider.model';
 
-
+ 
 @Component({
   selector: 'sp-login',
   templateUrl: './sp-login.component.html',
@@ -89,7 +89,6 @@ export class SPLoginComponent implements OnInit{
 
     onSubmitForm(){
         this.serviceProvider = this.loginForm.value;
-        console.log(this.serviceProvider);
         this.loginSpService.authenticate(this.serviceProvider, this.webApiPathService.getWebApiPath('login-sp').path)
             .subscribe(responseSp => {
                 if (responseSp.status === "success") { 
