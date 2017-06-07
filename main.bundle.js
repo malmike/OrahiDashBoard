@@ -343,7 +343,6 @@ var SPLoginComponent = (function () {
     SPLoginComponent.prototype.onSubmitForm = function () {
         var _this = this;
         this.serviceProvider = this.loginForm.value;
-        //console.log(this.serviceProvider);
         this.loginSpService.authenticate(this.serviceProvider, this.webApiPathService.getWebApiPath('login-sp').path)
             .subscribe(function (responseSp) {
             if (responseSp.status === "success") {
@@ -351,6 +350,7 @@ var SPLoginComponent = (function () {
                 _this.snackBar.open(responseSp.message, '', {
                     duration: 2000,
                 });
+                _this.router.navigate(['/nav', 'dashboard']);
             }
             else {
                 _this.snackBar.open(responseSp.message, '', {
@@ -654,8 +654,6 @@ var LoginSpService = (function () {
             headers: headers
         });
         var urlPath = this.authUrl + path;
-        console.log(urlPath);
-        console.log(serviceProvider);
         return this.http
             .post(urlPath, JSON.stringify(serviceProvider), requestoptions)
             .map(function (res) {

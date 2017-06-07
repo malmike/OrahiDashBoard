@@ -17,17 +17,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_img_cropper__ = __webpack_require__(1007);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular2_datatable__ = __webpack_require__(1038);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular2_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_angular2_datatable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_dashboard_dashboard_component__ = __webpack_require__(1015);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_dashboard_dashboard_component__ = __webpack_require__(1036);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_app_navigation_app_nav_component__ = __webpack_require__(1014);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_sp_services_add_service_add_service_component__ = __webpack_require__(1018);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_sp_services_add_category_add_category_component__ = __webpack_require__(1017);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_sp_receipts_sp_receipts_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_sp_services_add_service_add_service_component__ = __webpack_require__(1017);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_sp_services_add_category_add_category_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_sp_receipts_sp_receipts_component__ = __webpack_require__(1015);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__routes_dashboard_routing_module__ = __webpack_require__(1037);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_shared_information_nav_menu_service__ = __webpack_require__(1024);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_httpCalls_add_service_service__ = __webpack_require__(1021);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_httpCalls_add_service_category_service__ = __webpack_require__(1020);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_httpCalls_get_service_category_service__ = __webpack_require__(1023);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_httpCalls_get_receipts_service__ = __webpack_require__(1022);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_shared_information_nav_menu_service__ = __webpack_require__(1023);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_httpCalls_add_service_service__ = __webpack_require__(1020);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_httpCalls_add_service_category_service__ = __webpack_require__(1019);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_httpCalls_get_service_category_service__ = __webpack_require__(1022);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_httpCalls_get_receipts_service__ = __webpack_require__(1021);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashBoardModule", function() { return DashBoardModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -114,7 +114,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var _ = __webpack_require__(1028);
+var _ = __webpack_require__(1027);
 var Rx_1 = __webpack_require__(305);
 var DataTable = (function () {
     function DataTable(differs) {
@@ -455,7 +455,7 @@ var PointPool = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(1031);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(1030);
 /* unused harmony reexport ImageCropperModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__ = __webpack_require__(1010);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__["a"]; });
@@ -504,11 +504,11 @@ var CropperDrawSettings = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__model_bounds__ = __webpack_require__(1005);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(1032);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(1033);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(1034);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(1035);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(1030);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(1031);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(1032);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(1033);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(1034);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(1029);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_pointPool__ = __webpack_require__(1006);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropper; });
 var __extends = (this && this.__extends) || function (d, b) {
@@ -1508,7 +1508,7 @@ var ImageCropper = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageCropper__ = __webpack_require__(1009);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cropperSettings__ = __webpack_require__(1004);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(1029);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(1028);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_cropPosition__ = __webpack_require__(1011);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropperComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1844,7 +1844,7 @@ var Point = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_shared_information_nav_menu_service__ = __webpack_require__(1024);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_shared_information_nav_menu_service__ = __webpack_require__(1023);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppNavComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1889,44 +1889,11 @@ var AppNavComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashBoardComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var DashBoardComponent = (function () {
-    function DashBoardComponent() {
-    }
-    DashBoardComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'dashboard',
-            template: __webpack_require__(1046),
-            styles: [__webpack_require__(1041)]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DashBoardComponent);
-    return DashBoardComponent;
-}());
-//# sourceMappingURL=/mnt/d/malmike21/Projects/Angular/OrahiDashBoard/src/dashboard.component.js.map
-
-/***/ }),
-
-/***/ 1016:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_information_webapi_path_service__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_httpCalls_get_receipts_service__ = __webpack_require__(1022);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_service_model__ = __webpack_require__(1019);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_httpCalls_get_receipts_service__ = __webpack_require__(1021);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_service_model__ = __webpack_require__(1018);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpReceiptsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1958,7 +1925,6 @@ var SpReceiptsComponent = (function () {
     SpReceiptsComponent.prototype.getToken = function () {
         var currentUser = JSON.parse(localStorage.getItem('currentUser'));
         this.token = currentUser.token;
-        console.log(this.token);
         this.getSpReceiptsList();
     };
     SpReceiptsComponent.prototype.getSpReceiptsList = function () {
@@ -1968,7 +1934,16 @@ var SpReceiptsComponent = (function () {
             .subscribe(function (response) {
             if (response) {
                 _this.spReceiptsList = _this.getReceiptService.getReceiptsList();
-                console.log(_this.spReceiptsList);
+                _this.spReceiptsList.forEach(function (object) {
+                    var paymentDate = new Date(object.paymentDate);
+                    var year = paymentDate.getFullYear();
+                    var month = paymentDate.getMonth() + 1;
+                    var dt = paymentDate.getDate();
+                    var hours = paymentDate.getHours();
+                    var minutes = paymentDate.getMinutes();
+                    var seconds = paymentDate.getSeconds();
+                    object.paymentDate = dt + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ':' + seconds;
+                });
             }
             else {
                 _this.snackBar.open('No receipts exist', '', {
@@ -1997,7 +1972,7 @@ var SpReceiptsComponent = (function () {
 
 /***/ }),
 
-/***/ 1017:
+/***/ 1016:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2006,7 +1981,7 @@ var SpReceiptsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_shared_information_webapi_path_service__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_httpCalls_add_service_category_service__ = __webpack_require__(1020);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_httpCalls_add_service_category_service__ = __webpack_require__(1019);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddCategoryComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2121,7 +2096,7 @@ var AddCategoryComponent = (function () {
 
 /***/ }),
 
-/***/ 1018:
+/***/ 1017:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2133,9 +2108,9 @@ var AddCategoryComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_information_app_categories_service__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_information_reg_exp_service__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_shared_information_webapi_path_service__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_httpCalls_add_service_service__ = __webpack_require__(1021);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_httpCalls_get_service_category_service__ = __webpack_require__(1023);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_service_model__ = __webpack_require__(1019);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_httpCalls_add_service_service__ = __webpack_require__(1020);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_httpCalls_get_service_category_service__ = __webpack_require__(1022);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_service_model__ = __webpack_require__(1018);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_location_model__ = __webpack_require__(518);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__form_validators_structure_validator__ = __webpack_require__(189);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddServiceComponent; });
@@ -2194,9 +2169,13 @@ var AddServiceComponent = (function () {
         this.cropperSettings.height = 100;
         this.cropperSettings.croppedWidth = 100;
         this.cropperSettings.croppedHeight = 100;
-        this.cropperSettings.canvasWidth = 400;
-        this.cropperSettings.canvasHeight = 300;
+        this.cropperSettings.canvasWidth = 200;
+        this.cropperSettings.canvasHeight = 100;
         this.data = {};
+        this.data2 = {};
+        this.data3 = {};
+        this.data4 = {};
+        this.data5 = {};
     }
     AddServiceComponent.prototype.setPosition = function (position) {
         console.log(position);
@@ -2336,6 +2315,14 @@ var AddServiceComponent = (function () {
         var jsonService = JSON.parse(JSON.stringify(this.addServiceForm.value));
         if (this.data.image)
             jsonService['image1'] = this.data.image;
+        if (this.data2.image)
+            jsonService['image2'] = this.data2.image;
+        if (this.data3.image)
+            jsonService['image3'] = this.data3.image;
+        if (this.data4.image)
+            jsonService['image4'] = this.data4.image;
+        if (this.data5.image)
+            jsonService['image5'] = this.data5.image;
         if ((this.custom_lat !== 0 && this.custom_lng !== 0)) {
             var location = new __WEBPACK_IMPORTED_MODULE_11__models_location_model__["a" /* LocationModel */](this.custom_lat, this.custom_lng);
             jsonService['location'] = location;
@@ -2406,7 +2393,7 @@ var AddServiceComponent = (function () {
 
 /***/ }),
 
-/***/ 1019:
+/***/ 1018:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2436,7 +2423,7 @@ var ServiceModel = (function () {
 
 /***/ }),
 
-/***/ 1020:
+/***/ 1019:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2514,7 +2501,7 @@ var AddServiceCategoryService = (function () {
 
 /***/ }),
 
-/***/ 1021:
+/***/ 1020:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2592,7 +2579,7 @@ var AddServiceService = (function () {
 
 /***/ }),
 
-/***/ 1022:
+/***/ 1021:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2676,7 +2663,7 @@ var GetReceiptsService = (function () {
 
 /***/ }),
 
-/***/ 1023:
+/***/ 1022:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2759,12 +2746,12 @@ var GetServiceCategoryService = (function () {
 
 /***/ }),
 
-/***/ 1024:
+/***/ 1023:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_data_nav_menu_data__ = __webpack_require__(1036);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_data_nav_menu_data__ = __webpack_require__(1035);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavMenuService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2793,7 +2780,7 @@ var NavMenuService = (function () {
 
 /***/ }),
 
-/***/ 1025:
+/***/ 1024:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2809,7 +2796,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(0);
 var DataTable_1 = __webpack_require__(1003);
-var _ = __webpack_require__(1028);
+var _ = __webpack_require__(1027);
 var BootstrapPaginator = (function () {
     function BootstrapPaginator() {
         this.rowsOnPageSet = [];
@@ -2841,7 +2828,7 @@ exports.BootstrapPaginator = BootstrapPaginator;
 
 /***/ }),
 
-/***/ 1026:
+/***/ 1025:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2896,7 +2883,7 @@ exports.DefaultSorter = DefaultSorter;
 
 /***/ }),
 
-/***/ 1027:
+/***/ 1026:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2957,7 +2944,7 @@ exports.Paginator = Paginator;
 
 /***/ }),
 
-/***/ 1028:
+/***/ 1027:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -20050,7 +20037,7 @@ exports.Paginator = Paginator;
 
 /***/ }),
 
-/***/ 1029:
+/***/ 1028:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20779,7 +20766,7 @@ var Exif = (function () {
 
 /***/ }),
 
-/***/ 1030:
+/***/ 1029:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20819,7 +20806,7 @@ var ImageCropperDataShare = (function () {
 
 /***/ }),
 
-/***/ 1031:
+/***/ 1030:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20856,7 +20843,7 @@ var ImageCropperModule = (function () {
 
 /***/ }),
 
-/***/ 1032:
+/***/ 1031:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20968,7 +20955,7 @@ var CornerMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 1033:
+/***/ 1032:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20986,7 +20973,7 @@ var CropTouch = (function () {
 
 /***/ }),
 
-/***/ 1034:
+/***/ 1033:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21069,7 +21056,7 @@ var DragMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 1035:
+/***/ 1034:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21083,18 +21070,51 @@ var ImageCropperModel = (function () {
 
 /***/ }),
 
-/***/ 1036:
+/***/ 1035:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavMenu; });
 var NavMenu = [
-    { link: 'dashboard', label: 'DashBoard' },
-    { link: 'addservice', label: 'Add Service' },
-    { link: 'addservicecategory', label: 'Add Service Category' },
-    { link: 'receipts', label: 'Receipts' }
+    { link: 'dashboard', label: 'DashBoard', image: './assets/svg/ic_dashboard_black_24px.svg' },
+    { link: 'addservice', label: 'Add Service', image: './assets/svg/ic_add_location_black_24px.svg' },
+    { link: 'addservicecategory', label: 'Add Service Category', image: './assets/svg/ic_domain_black_24px.svg' },
+    { link: 'receipts', label: 'Receipts', image: './assets/svg/ic_receipt_black_24px.svg' }
 ];
 //# sourceMappingURL=/mnt/d/malmike21/Projects/Angular/OrahiDashBoard/src/nav-menu.data.js.map
+
+/***/ }),
+
+/***/ 1036:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashBoardComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var DashBoardComponent = (function () {
+    function DashBoardComponent() {
+    }
+    DashBoardComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'dashboard',
+            template: __webpack_require__(1046),
+            styles: [__webpack_require__(1041)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], DashBoardComponent);
+    return DashBoardComponent;
+}());
+//# sourceMappingURL=/mnt/d/malmike21/Projects/Angular/OrahiDashBoard/src/dashboard.component.js.map
 
 /***/ }),
 
@@ -21105,10 +21125,9 @@ var NavMenu = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_app_navigation_app_nav_component__ = __webpack_require__(1014);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_dashboard_dashboard_component__ = __webpack_require__(1015);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_sp_services_add_service_add_service_component__ = __webpack_require__(1018);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_sp_services_add_category_add_category_component__ = __webpack_require__(1017);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_sp_receipts_sp_receipts_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_sp_services_add_service_add_service_component__ = __webpack_require__(1017);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_sp_services_add_category_add_category_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_sp_receipts_sp_receipts_component__ = __webpack_require__(1015);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashBoardRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -21125,7 +21144,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var DashBoardRoutingModule = (function () {
     function DashBoardRoutingModule() {
     }
@@ -21135,10 +21153,10 @@ var DashBoardRoutingModule = (function () {
                     { path: '', component: __WEBPACK_IMPORTED_MODULE_2__components_app_navigation_app_nav_component__["a" /* AppNavComponent */],
                         children: [
                             { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-                            { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_3__components_dashboard_dashboard_component__["a" /* DashBoardComponent */] },
-                            { path: 'addservice', component: __WEBPACK_IMPORTED_MODULE_4__components_sp_services_add_service_add_service_component__["a" /* AddServiceComponent */] },
-                            { path: 'addservicecategory', component: __WEBPACK_IMPORTED_MODULE_5__components_sp_services_add_category_add_category_component__["a" /* AddCategoryComponent */] },
-                            { path: 'receipts', component: __WEBPACK_IMPORTED_MODULE_6__components_sp_receipts_sp_receipts_component__["a" /* SpReceiptsComponent */] }
+                            { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_5__components_sp_receipts_sp_receipts_component__["a" /* SpReceiptsComponent */] },
+                            { path: 'addservice', component: __WEBPACK_IMPORTED_MODULE_3__components_sp_services_add_service_add_service_component__["a" /* AddServiceComponent */] },
+                            { path: 'addservicecategory', component: __WEBPACK_IMPORTED_MODULE_4__components_sp_services_add_category_add_category_component__["a" /* AddCategoryComponent */] },
+                            { path: 'receipts', component: __WEBPACK_IMPORTED_MODULE_5__components_sp_receipts_sp_receipts_component__["a" /* SpReceiptsComponent */] }
                         ]
                     }
                 ])],
@@ -21148,6 +21166,7 @@ var DashBoardRoutingModule = (function () {
     ], DashBoardRoutingModule);
     return DashBoardRoutingModule;
 }());
+// { path: 'dashboard', component:DashBoardComponent }
 //# sourceMappingURL=/mnt/d/malmike21/Projects/Angular/OrahiDashBoard/src/dashboard-routing.module.js.map
 
 /***/ }),
@@ -21156,9 +21175,9 @@ var DashBoardRoutingModule = (function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 var dataTable_directive = __webpack_require__(1003);
-var defaultSorter_directive = __webpack_require__(1026);
-var paginator_component = __webpack_require__(1027);
-var bootstrapPaginator_component = __webpack_require__(1025);
+var defaultSorter_directive = __webpack_require__(1025);
+var paginator_component = __webpack_require__(1026);
+var bootstrapPaginator_component = __webpack_require__(1024);
 var dataTable_module = __webpack_require__(1039);
 
 exports.DataTable = dataTable_directive.DataTable;
@@ -21187,9 +21206,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = __webpack_require__(0);
 var common_1 = __webpack_require__(13);
 var DataTable_1 = __webpack_require__(1003);
-var DefaultSorter_1 = __webpack_require__(1026);
-var Paginator_1 = __webpack_require__(1027);
-var BootstrapPaginator_1 = __webpack_require__(1025);
+var DefaultSorter_1 = __webpack_require__(1025);
+var Paginator_1 = __webpack_require__(1026);
+var BootstrapPaginator_1 = __webpack_require__(1024);
 var DataTableModule = (function () {
     function DataTableModule() {
     }
@@ -21227,7 +21246,7 @@ exports = module.exports = __webpack_require__(62)();
 
 
 // module
-exports.push([module.i, ".spacer{\r\n    -webkit-box-flex: 1;\r\n    -ms-flex: 1 1 auto;\r\n    flex: 1 1 auto;\r\n}\r\n\r\nlabel{\r\n    font-weight:bold;\r\n    margin:1.5em 0;\r\n    display:block;\r\n}\r\n\r\n#page-padding{\r\n    padding: 0 1.5em 1.5em 1.5em;\r\n}\r\n\r\n.example-sidenav-content{\r\n    height: 100vh;\r\n}\r\n\r\n.header-toolbar {\r\n    position: fixed;\r\n    z-index: 2;\r\n    margin: 0;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".spacer{\r\n    -webkit-box-flex: 1;\r\n    -ms-flex: 1 1 auto;\r\n    flex: 1 1 auto;\r\n}\r\n\r\nlabel{\r\n    font-weight:bold;\r\n    margin:1.5em 0;\r\n    display:block;\r\n}\r\n\r\n#page-padding{\r\n    padding: 0 1.5em 1.5em 1.5em;\r\n}\r\n\r\n.example-sidenav-content{\r\n    height: 100vh;\r\n}\r\n\r\n.header-toolbar {\r\n    position: fixed;\r\n    z-index: 2;\r\n    margin: 0;\r\n}\r\n.md-list-avatar{\r\n    height:15px;\r\n    width:15px;\r\n}\r\n\r\nmd-list-item a{\r\n    color:black;\r\n    text-decoration: none;\r\n}\r\nmd-list-item a:hover{\r\n    color: blue\r\n\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -21312,7 +21331,7 @@ module.exports = module.exports.toString();
 /***/ 1045:
 /***/ (function(module, exports) {
 
-module.exports = "<md-toolbar color=\"primary\">\r\n    <button md-button (click)=\"sidenav.toggle()\">\r\n        <md-icon>menu</md-icon>\r\n    </button>\r\n\r\n    <span>{{title}}</span>\r\n    <span class=\"spacer\"></span>\r\n    <button md-icon-button [mdMenuTriggerFor]=\"menu\">\r\n      <md-icon>more_vert</md-icon>\r\n    </button>\r\n    <md-menu #menu=\"mdMenu\">\r\n      <button md-menu-item>\r\n        <md-icon>fingerprint</md-icon>\r\n        <span>LogOut</span>\r\n      </button>\r\n      <button md-menu-item disabled>\r\n        <md-icon>announcement</md-icon>\r\n        <span>Issues</span>\r\n      </button>\r\n      <button md-menu-item>\r\n        <md-icon>notifications_off</md-icon>\r\n        <span>Disable alerts</span>\r\n      </button>\r\n    </md-menu>\r\n</md-toolbar>\r\n\r\n<md-sidenav-container>\r\n  <md-sidenav #sidenav mode=\"side\" opened=\"true\">\r\n    <md-list>\r\n      <h3 md-subheader>Menu</h3>\r\n      <md-list-item *ngFor=\"let link of navLinks\">\r\n        <a md-line [routerLink]=\"link.link\">{{link.label}}</a>\r\n        <md-divider></md-divider>\r\n      </md-list-item>\r\n    </md-list>\r\n  </md-sidenav>\r\n  <div class=\"example-sidenav-content\">\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</md-sidenav-container>\r\n\r\n"
+module.exports = "<md-toolbar color=\"primary\">\r\n    <button md-button (click)=\"sidenav.toggle()\">\r\n        <md-icon>menu</md-icon>\r\n    </button>\r\n\r\n    <span>{{title}}</span>\r\n    <span class=\"spacer\"></span>\r\n    <button md-icon-button [mdMenuTriggerFor]=\"menu\">\r\n      <md-icon>more_vert</md-icon>\r\n    </button>\r\n    <md-menu #menu=\"mdMenu\">\r\n      <button md-menu-item>\r\n        <md-icon>fingerprint</md-icon>\r\n        <span>LogOut</span>\r\n      </button>\r\n      <button md-menu-item disabled>\r\n        <md-icon>announcement</md-icon>\r\n        <span>Issues</span>\r\n      </button>\r\n      <button md-menu-item>\r\n        <md-icon>notifications_off</md-icon>\r\n        <span>Disable alerts</span>\r\n      </button>\r\n    </md-menu>\r\n</md-toolbar>\r\n\r\n<md-sidenav-container>\r\n  <md-sidenav #sidenav mode=\"side\" opened=\"true\">\r\n    <md-list dense>\r\n      <md-list-item *ngFor=\"let link of navLinks\">\r\n        <img md-list-avatar class=\"md-list-avatar\" src=\"{{link.image}}\">\r\n        <a md-line [routerLink]=\"link.link\">{{link.label}}</a>\r\n        <md-divider></md-divider>\r\n      </md-list-item>\r\n    </md-list>\r\n  </md-sidenav>\r\n  <div class=\"example-sidenav-content\">\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</md-sidenav-container>\r\n\r\n"
 
 /***/ }),
 
@@ -21326,7 +21345,7 @@ module.exports = "<h3>Top Heroes</h3>\r\n"
 /***/ 1047:
 /***/ (function(module, exports) {
 
-module.exports = "<!--<div layout=\"row\" layout-align=\"center center\" id=\"sp-container\">\r\n  <div *ngFor=\"let item of spReceiptsList\">\r\n    <md-card >\r\n      <md-card-title>\r\n        {{item.service.serviceName}}\r\n      </md-card-title>\r\n      <md-card-content>\r\n        <p><b>CUSTOMER:</b> {{item.user.name}}</p>\r\n      </md-card-content>\r\n      <md-card-footer>\r\n      </md-card-footer>\r\n    </md-card>\r\n  </div>\r\n</div>-->\r\n\r\n<table style=\"margin:auto; padding: 1em\" class=\"table table-striped\" [mfData]=\"spReceiptsList\" #mf=\"mfDataTable\" [mfRowsOnPage]=\"3\">\r\n    <thead>\r\n    <tr>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"serviceName\"> <div style=\"background: skyblue\">SERVICE NAME</div></mfDefaultSorter>\r\n        </th>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"userName\"> <div style=\"background: skyblue\">USER NAME</div></mfDefaultSorter>\r\n        </th>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"amount\" ><div style=\"background: skyblue\">AMOUNT</div></mfDefaultSorter>\r\n        </th>\r\n    </tr>\r\n    </thead>\r\n    <tbody>\r\n    <tr *ngFor=\"let item of mf.data\">\r\n        <td><div style=\"background: white\">{{item.service.serviceName}}</div></td>\r\n        <td><div style=\"background: white\">{{item.user.name}}</div></td>\r\n        <td><div style=\"background: white\">{{item.rate}}</div></td>\r\n    </tr>\r\n    </tbody>\r\n    <tfoot>\r\n    <tr>\r\n        <td colspan=\"4\">\r\n            <mfBootstrapPaginator [rowsOnPageSet]=\"[5,10,25]\"></mfBootstrapPaginator>\r\n        </td>\r\n    </tr>\r\n    </tfoot>\r\n</table>"
+module.exports = "<!--<div layout=\"row\" layout-align=\"center center\" id=\"sp-container\">\r\n  <div *ngFor=\"let item of spReceiptsList\">\r\n    <md-card >\r\n      <md-card-title>\r\n        {{item.service.serviceName}}\r\n      </md-card-title>\r\n      <md-card-content>\r\n        <p><b>CUSTOMER:</b> {{item.user.name}}</p>\r\n      </md-card-content>\r\n      <md-card-footer>\r\n      </md-card-footer>\r\n    </md-card>\r\n  </div>\r\n</div>-->\r\n\r\n<table style=\"margin:auto; padding: 1em\" class=\"table table-striped\" [mfData]=\"spReceiptsList\" #mf=\"mfDataTable\" [mfRowsOnPage]=\"3\">\r\n    <thead>\r\n    <tr>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"approve\"> <div style=\"background: skyblue\">APPROVE</div></mfDefaultSorter>\r\n        </th>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"serviceName\"> <div style=\"background: skyblue\">SERVICE NAME</div></mfDefaultSorter>\r\n        </th>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"userName\"> <div style=\"background: skyblue\">USER NAME</div></mfDefaultSorter>\r\n        </th>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"amount\" ><div style=\"background: skyblue\">AMOUNT</div></mfDefaultSorter>\r\n        </th>\r\n        <th style=\"width: 20%; text-align: left;\">\r\n            <mfDefaultSorter by=\"payment_date\" ><div style=\"background: skyblue\">PAYMENT DATE</div></mfDefaultSorter>\r\n        </th>\r\n    </tr>\r\n    </thead>\r\n    <tbody>\r\n    <tr *ngFor=\"let item of mf.data\">\r\n        <td style=\"background: white\"><input type=\"checkbox\" value=\"{{item.approve}}\"/></td>\r\n        <td style=\"background: white\">{{item.service.serviceName}}</td>\r\n        <td style=\"background: white\">{{item.user.name}}</td>\r\n        <td style=\"background: white\">{{item.rate}}</td>\r\n        <td style=\"background: white\">{{item.paymentDate}}</td>\r\n    </tr>\r\n    </tbody>\r\n    <tfoot>\r\n    <tr>\r\n        <td colspan=\"4\">\r\n            <mfBootstrapPaginator [rowsOnPageSet]=\"[5,10,25]\"></mfBootstrapPaginator>\r\n        </td>\r\n    </tr>\r\n    </tfoot>\r\n</table>"
 
 /***/ }),
 
@@ -21340,7 +21359,7 @@ module.exports = "<div layout=\"row\" layout-align=\"center center\" id=\"sp-con
 /***/ 1049:
 /***/ (function(module, exports) {
 
-module.exports = "<div layout=\"row\" id=\"sp-container\">\r\n    <md-card>\r\n      <md-card-title>Add Service</md-card-title>\r\n      <md-card-content>\r\n        <form [formGroup]=\"addServiceForm\" *ngIf=\"serviceCategoryList\" (ngSubmit)=\"onSubmitForm()\">\r\n          <md-select placeholder=\"Service Category\" formControlName=\"category\" id=\"category\">\r\n            <md-option *ngFor=\"let category of serviceCategoryList\" [value]=\"category._id\">{{ category.name }}</md-option>\r\n          </md-select><br/>\r\n          <md-input-container>\r\n            <input mdInput placeholder=\"Service Name\" type=\"text\" formControlName=\"name\" id=\"name\" required>\r\n            <md-hint align=\"end\" *ngIf=\"formErrors.name\">{{ formErrors.name }}</md-hint>\r\n          </md-input-container><br/>\r\n          <md-input-container>\r\n            <input mdInput placeholder=\"Price\" type=\"number\" step=\"0.01\" formControlName=\"rate\" id=\"rate\" required>\r\n          </md-input-container><br/>\r\n          <md-input-container>\r\n            <textarea mdInput placeholder=\"Service Description\" formControlName=\"description\" columns=\"1\" md-maxlength=\"100%\" rows=\"5\"></textarea>\r\n          </md-input-container><br/>\r\n          <md-input-container>\r\n            <input mdInput placeholder=\"Trailer\" type=\"text\" formControlName=\"trailer\" id=\"trailer\">\r\n          </md-input-container><br/>\r\n\r\n\r\n          <!--<div class=\"file-upload\">\r\n            <span class=\"text\">upload</span>\r\n            <input id=\"custom-input\" type=\"file\" (change)=\"fileChangeListener($event)\">\r\n          </div>\r\n          <img-cropper #cropper [image]=\"data\" [settings]=\"cropperSettings\" style=\"align-items: stretch\"></img-cropper>\r\n          <span class=\"result rounded\" *ngIf=\"data.image\" >\r\n            <img [src]=\"data.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n          </span> -->\r\n         \r\n          <div>\r\n            <img-cropper [image]=\"data\" [settings]=\"cropperSettings\"></img-cropper>\r\n            <span class=\"result rounded\" *ngIf=\"data.image\" >\r\n              <img [src]=\"data.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n            </span> \r\n          </div>\r\n    \r\n          <div formGroupName=\"contact\">\r\n            <md-input-container>\r\n              <input mdInput placeholder=\"Contact Name\" type=\"text\" formControlName=\"name\" id=\"name\">\r\n              <md-hint align=\"end\" *ngIf=\"contactNameError\">{{ contactNameError }}</md-hint>\r\n            </md-input-container><br/>\r\n            <md-input-container>\r\n              <input mdInput placeholder=\"Contact Phone Number\" type=\"text\" formControlName=\"phoneNumber\" id=\"phoneNumber\">\r\n              <md-hint align=\"end\" *ngIf=\"contactPhoneNumberError\">{{ contactPhoneNumberError }}</md-hint>\r\n            </md-input-container><br/>\r\n            <md-input-container>\r\n              <input mdInput placeholder=\"Contact Email\" type=\"text\" formControlName=\"email\" id=\"email\">\r\n              <md-hint align=\"end\" *ngIf=\"contactEmailError\">{{ contactEmailError }}</md-hint>\r\n            </md-input-container>\r\n          </div>\r\n          <md-checkbox mdInput *ngIf=\"controlOnline\" formControlName=\"online\" id=\"online\">Online</md-checkbox><br/>\r\n\r\n          <sebm-google-map [latitude]=\"lat\" [longitude]=\"lng\" (mapClick)=\"mapClicked($event)\">\r\n            <sebm-google-map-marker *ngIf=\"custom_lat && custom_lng\" [latitude]=\"custom_lat\" [longitude]=\"custom_lng\"></sebm-google-map-marker>\r\n            <!--<sebm-google-map-marker [latitude]=\"lat\" [longitude]=\"lng\"></sebm-google-map-marker>-->\r\n          </sebm-google-map>\r\n\r\n         \r\n\r\n          <div id=\"submit-container\">\r\n            <button md-raised-button type=\"submit\" [disabled]=\"!addServiceForm.valid\">Add Service</button>\r\n          </div>\r\n        </form>\r\n      </md-card-content>\r\n    </md-card>\r\n</div>"
+module.exports = "<div layout=\"row\" id=\"sp-container\">\r\n    <md-card>\r\n      <md-card-title>Add Service</md-card-title>\r\n      <md-card-content>\r\n        <form [formGroup]=\"addServiceForm\" *ngIf=\"serviceCategoryList\" (ngSubmit)=\"onSubmitForm()\">\r\n          <md-select placeholder=\"Service Category\" formControlName=\"category\" id=\"category\">\r\n            <md-option *ngFor=\"let category of serviceCategoryList\" [value]=\"category._id\">{{ category.name }}</md-option>\r\n          </md-select><br/>\r\n          <md-input-container>\r\n            <input mdInput placeholder=\"Service Name\" type=\"text\" formControlName=\"name\" id=\"name\" required>\r\n            <md-hint align=\"end\" *ngIf=\"formErrors.name\">{{ formErrors.name }}</md-hint>\r\n          </md-input-container><br/>\r\n          <md-input-container>\r\n            <input mdInput placeholder=\"Price\" type=\"number\" step=\"0.01\" formControlName=\"rate\" id=\"rate\" required>\r\n          </md-input-container><br/>\r\n          <md-input-container>\r\n            <textarea mdInput placeholder=\"Service Description\" formControlName=\"description\" columns=\"1\" md-maxlength=\"100%\" rows=\"5\"></textarea>\r\n          </md-input-container><br/>\r\n          <md-input-container>\r\n            <input mdInput placeholder=\"Trailer\" type=\"text\" formControlName=\"trailer\" id=\"trailer\">\r\n          </md-input-container><br/>\r\n\r\n\r\n          \r\n          <!--<div class=\"file-upload\">\r\n            <input id=\"custom-input\" type=\"file\" (change)=\"fileChangeListener($event)\">\r\n          </div>\r\n          <img-cropper #cropper [image]=\"data\" [settings]=\"cropperSettings\" style=\"align-items: stretch\"></img-cropper>\r\n          <span class=\"result rounded\" *ngIf=\"data.image\" >\r\n            <img [src]=\"data.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n          </span> -->\r\n         \r\n          <div>\r\n            <img-cropper [image]=\"data\" [settings]=\"cropperSettings\"></img-cropper>\r\n            <span class=\"result rounded\" *ngIf=\"data.image\" >\r\n              <img [src]=\"data.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n            </span> \r\n          </div>\r\n          <div>\r\n            <img-cropper [image]=\"data2\" [settings]=\"cropperSettings\"></img-cropper>\r\n            <span class=\"result rounded\" *ngIf=\"data2.image\" >\r\n              <img [src]=\"data2.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n            </span> \r\n          </div>\r\n          <div>\r\n            <img-cropper [image]=\"data3\" [settings]=\"cropperSettings\"></img-cropper>\r\n            <span class=\"result rounded\" *ngIf=\"data3.image\" >\r\n              <img [src]=\"data3.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n            </span> \r\n          </div>\r\n          <div>\r\n            <img-cropper [image]=\"data4\" [settings]=\"cropperSettings\"></img-cropper>\r\n            <span class=\"result rounded\" *ngIf=\"data4.image\" >\r\n              <img [src]=\"data4.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n            </span> \r\n          </div>\r\n          <div>\r\n            <img-cropper [image]=\"data5\" [settings]=\"cropperSettings\"></img-cropper>\r\n            <span class=\"result rounded\" *ngIf=\"data5.image\" >\r\n              <img [src]=\"data5.image\" [width]=\"cropperSettings.croppedWidth\" [height]=\"cropperSettings.croppedHeight\">\r\n            </span> \r\n          </div>\r\n    \r\n          <div formGroupName=\"contact\">\r\n            <md-input-container>\r\n              <input mdInput placeholder=\"Contact Name\" type=\"text\" formControlName=\"name\" id=\"name\">\r\n              <md-hint align=\"end\" *ngIf=\"contactNameError\">{{ contactNameError }}</md-hint>\r\n            </md-input-container><br/>\r\n            <md-input-container>\r\n              <input mdInput placeholder=\"Contact Phone Number\" type=\"text\" formControlName=\"phoneNumber\" id=\"phoneNumber\">\r\n              <md-hint align=\"end\" *ngIf=\"contactPhoneNumberError\">{{ contactPhoneNumberError }}</md-hint>\r\n            </md-input-container><br/>\r\n            <md-input-container>\r\n              <input mdInput placeholder=\"Contact Email\" type=\"text\" formControlName=\"email\" id=\"email\">\r\n              <md-hint align=\"end\" *ngIf=\"contactEmailError\">{{ contactEmailError }}</md-hint>\r\n            </md-input-container>\r\n          </div>\r\n          <md-checkbox mdInput *ngIf=\"controlOnline\" formControlName=\"online\" id=\"online\">Online</md-checkbox><br/>\r\n\r\n          <sebm-google-map [latitude]=\"lat\" [longitude]=\"lng\" (mapClick)=\"mapClicked($event)\">\r\n            <sebm-google-map-marker *ngIf=\"custom_lat && custom_lng\" [latitude]=\"custom_lat\" [longitude]=\"custom_lng\"></sebm-google-map-marker>\r\n            <!--<sebm-google-map-marker [latitude]=\"lat\" [longitude]=\"lng\"></sebm-google-map-marker>-->\r\n          </sebm-google-map>\r\n\r\n         \r\n\r\n          <div id=\"submit-container\">\r\n            <button md-raised-button type=\"submit\" [disabled]=\"!addServiceForm.valid\">Add Service</button>\r\n          </div>\r\n        </form>\r\n      </md-card-content>\r\n    </md-card>\r\n</div>"
 
 /***/ }),
 

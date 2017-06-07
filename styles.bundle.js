@@ -411,7 +411,7 @@ exports = module.exports = __webpack_require__(62)();
 exports.i(__webpack_require__(738), "");
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n\n\n/*This is for the ng2-img-cropper api. It is applied on the add-service component page*/\n.ng2-imgcrop canvas{\n    display: block!important;\n}\n\n\nbody{\n    margin: 0;\n    /*overflow-y: hidden;*/\n}\n/*::-webkit-scrollbar {\n    display: none;\n}*/", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\n\n/*This is for the ng2-img-cropper api. It is applied on the add-service component page*/\n.ng2-imgcrop canvas{\n    display: block!important;\n}\n\n\nbody{\n    margin: 0;\n    /*overflow-y: hidden;*/\n}\n/*::-webkit-scrollbar {\n    display: none;\n}*/", ""]);
 
 // exports
 
