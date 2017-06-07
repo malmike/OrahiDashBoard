@@ -21,8 +21,8 @@
           </md-input-container><br/>
 
 
+          
           <!--<div class="file-upload">
-            <span class="text">upload</span>
             <input id="custom-input" type="file" (change)="fileChangeListener($event)">
           </div>
           <img-cropper #cropper [image]="data" [settings]="cropperSettings" style="align-items: stretch"></img-cropper>
@@ -34,6 +34,30 @@
             <img-cropper [image]="data" [settings]="cropperSettings"></img-cropper>
             <span class="result rounded" *ngIf="data.image" >
               <img [src]="data.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
+            </span> 
+          </div>
+          <div>
+            <img-cropper [image]="data2" [settings]="cropperSettings"></img-cropper>
+            <span class="result rounded" *ngIf="data2.image" >
+              <img [src]="data2.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
+            </span> 
+          </div>
+          <div>
+            <img-cropper [image]="data3" [settings]="cropperSettings"></img-cropper>
+            <span class="result rounded" *ngIf="data3.image" >
+              <img [src]="data3.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
+            </span> 
+          </div>
+          <div>
+            <img-cropper [image]="data4" [settings]="cropperSettings"></img-cropper>
+            <span class="result rounded" *ngIf="data4.image" >
+              <img [src]="data4.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
+            </span> 
+          </div>
+          <div>
+            <img-cropper [image]="data5" [settings]="cropperSettings"></img-cropper>
+            <span class="result rounded" *ngIf="data5.image" >
+              <img [src]="data5.image" [width]="cropperSettings.croppedWidth" [height]="cropperSettings.croppedHeight">
             </span> 
           </div>
     

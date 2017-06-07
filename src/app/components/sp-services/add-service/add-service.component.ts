@@ -46,6 +46,10 @@ export class AddServiceComponent implements OnInit{
     serviceCategoryList: Array<ServiceCategoryModel> = new Array<ServiceCategoryModel>();
     controlOnline: boolean = false;
     data: any;
+    data2: any;
+    data3: any;
+    data4: any;
+    data5: any;
     cropperSettings: CropperSettings;
     location: LocationModel;
 
@@ -84,10 +88,15 @@ export class AddServiceComponent implements OnInit{
         this.cropperSettings.height = 100;
         this.cropperSettings.croppedWidth =100;
         this.cropperSettings.croppedHeight = 100;
-        this.cropperSettings.canvasWidth = 400;
-        this.cropperSettings.canvasHeight = 300;
+        this.cropperSettings.canvasWidth = 200;
+        this.cropperSettings.canvasHeight = 100;
  
         this.data = {};
+        this.data2 = {};
+        this.data3 = {};
+        this.data4 = {};
+        this.data5 = {};
+
     }
 
     ngOnInit(){
@@ -245,6 +254,10 @@ export class AddServiceComponent implements OnInit{
         let jsonService = JSON.parse(JSON.stringify(this.addServiceForm.value));
         
         if(this.data.image) jsonService['image1'] = this.data.image;
+        if(this.data2.image) jsonService['image2'] = this.data2.image;
+        if(this.data3.image) jsonService['image3'] = this.data3.image;
+        if(this.data4.image) jsonService['image4'] = this.data4.image;
+        if(this.data5.image) jsonService['image5'] = this.data5.image;
         if((this.custom_lat !== 0 && this.custom_lng !== 0)){
             let location = new LocationModel(
                 this.custom_lat, this.custom_lng
