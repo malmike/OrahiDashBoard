@@ -1,0 +1,52 @@
+<!--<div layout="row" layout-align="center center" id="sp-container">
+  <div *ngFor="let item of spReceiptsList">
+    <md-card >
+      <md-card-title>
+        {{item.service.serviceName}}
+      </md-card-title>
+      <md-card-content>
+        <p><b>CUSTOMER:</b> {{item.user.name}}</p>
+      </md-card-content>
+      <md-card-footer>
+      </md-card-footer>
+    </md-card>
+  </div>
+</div>-->
+
+<table style="margin:auto; padding: 1em" class="table table-striped" [mfData]="spReceiptsList" #mf="mfDataTable" [mfRowsOnPage]="3">
+    <thead>
+    <tr>
+        <th style="width: 20%; text-align: left;">
+            <mfDefaultSorter by="approve"> <div style="background: skyblue">APPROVE</div></mfDefaultSorter>
+        </th>
+        <th style="width: 20%; text-align: left;">
+            <mfDefaultSorter by="serviceName"> <div style="background: skyblue">SERVICE NAME</div></mfDefaultSorter>
+        </th>
+        <th style="width: 20%; text-align: left;">
+            <mfDefaultSorter by="userName"> <div style="background: skyblue">USER NAME</div></mfDefaultSorter>
+        </th>
+        <th style="width: 20%; text-align: left;">
+            <mfDefaultSorter by="amount" ><div style="background: skyblue">AMOUNT</div></mfDefaultSorter>
+        </th>
+        <th style="width: 20%; text-align: left;">
+            <mfDefaultSorter by="payment_date" ><div style="background: skyblue">PAYMENT DATE</div></mfDefaultSorter>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of mf.data">
+        <td style="background: white"><input type="checkbox" value="{{item.approve}}"/></td>
+        <td style="background: white">{{item.service.serviceName}}</td>
+        <td style="background: white">{{item.user.name}}</td>
+        <td style="background: white">{{item.rate}}</td>
+        <td style="background: white">{{item.paymentDate}}</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+        </td>
+    </tr>
+    </tfoot>
+</table>
