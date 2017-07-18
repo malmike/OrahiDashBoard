@@ -49,6 +49,7 @@
     "install": "^0.10.1",
     "npm": "^5.0.3",
     "rxjs": "5.1.0",
+    "typescript": "^2.0.10",
     "zone.js": "0.7.6"
   },
   "devDependencies": {
@@ -68,7 +69,6 @@
     "ngrx-store-freeze": "^0.1.9",
     "protractor": "5.1.0",
     "ts-node": "2.0.0",
-    "tslint": "4.4.2",
-    "typescript": "^2.0.10"
+    "tslint": "4.4.2"
   }
 }
