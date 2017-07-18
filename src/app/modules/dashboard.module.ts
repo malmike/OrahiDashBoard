@@ -8,7 +8,7 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 import 'hammerjs';
 
 //External components
-import { ImageCropperComponent } from 'ng2-img-cropper';
+import { ImageCropperModule } from 'ng2-img-cropper';
 
 //Modules
 import { DataTableModule } from "angular2-datatable";
@@ -31,8 +31,8 @@ import { GetServiceCategoryService } from '../services/httpCalls/get-service-cat
 import { GetReceiptsService } from '../services/httpCalls/get-receipts.service';
 
 @NgModule({
-    imports: [ 
-        CommonModule, 
+    imports: [
+        CommonModule,
         HttpModule,
         ReactiveFormsModule ,
         MaterialModule.forRoot(),
@@ -40,14 +40,14 @@ import { GetReceiptsService } from '../services/httpCalls/get-receipts.service';
             apiKey: 'AIzaSyCWWwrRN2N09Qt5TtJQTQi-4i0bi10LMSE'
         }),
         DataTableModule,
-        DashBoardRoutingModule
-    ],  
-    declarations: [ 
+        DashBoardRoutingModule,
+        ImageCropperModule
+    ],
+    declarations: [
         AppNavComponent,
         DashBoardComponent,
         AddServiceComponent,
         AddCategoryComponent,
-        ImageCropperComponent,
         SpReceiptsComponent
     ],
     providers: [
